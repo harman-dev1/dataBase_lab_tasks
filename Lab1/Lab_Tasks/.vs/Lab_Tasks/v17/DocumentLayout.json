@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "P:\\Programming\\Data Base\\Lab Tasks\\Lab1\\Lab_Tasks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60A0472B-40CC-4BA3-A474-BE860C9A6994}|Lab_Tasks\\Lab_Tasks.csproj|p:\\programming\\data base\\lab tasks\\lab1\\lab_tasks\\lab_tasks\\delete_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{60A0472B-40CC-4BA3-A474-BE860C9A6994}|Lab_Tasks\\Lab_Tasks.csproj|solutionrelative:lab_tasks\\delete_student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "delete_student.cs [Design]",
+              "DocumentMoniker": "P:\\Programming\\Data Base\\Lab Tasks\\Lab1\\Lab_Tasks\\Lab_Tasks\\delete_student.cs",
+              "RelativeDocumentMoniker": "Lab_Tasks\\delete_student.cs",
+              "ToolTip": "P:\\Programming\\Data Base\\Lab Tasks\\Lab1\\Lab_Tasks\\Lab_Tasks\\delete_student.cs [Design]",
+              "RelativeToolTip": "Lab_Tasks\\delete_student.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T08:38:50.168Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

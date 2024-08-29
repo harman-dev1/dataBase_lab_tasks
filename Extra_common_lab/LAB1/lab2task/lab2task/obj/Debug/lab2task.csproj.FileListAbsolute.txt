@@ -1,0 +1,10 @@
+E:\DB\LAB1\lab2task\lab2task\bin\Debug\lab2task.exe.config
+E:\DB\LAB1\lab2task\lab2task\bin\Debug\lab2task.exe
+E:\DB\LAB1\lab2task\lab2task\bin\Debug\lab2task.pdb
+E:\DB\LAB1\lab2task\lab2task\obj\Debug\lab2task.csproj.AssemblyReference.cache
+E:\DB\LAB1\lab2task\lab2task\obj\Debug\lab2task.Form1.resources
+E:\DB\LAB1\lab2task\lab2task\obj\Debug\lab2task.Properties.Resources.resources
+E:\DB\LAB1\lab2task\lab2task\obj\Debug\lab2task.csproj.GenerateResource.cache
+E:\DB\LAB1\lab2task\lab2task\obj\Debug\lab2task.csproj.CoreCompileInputs.cache
+E:\DB\LAB1\lab2task\lab2task\obj\Debug\lab2task.exe
+E:\DB\LAB1\lab2task\lab2task\obj\Debug\lab2task.pdb

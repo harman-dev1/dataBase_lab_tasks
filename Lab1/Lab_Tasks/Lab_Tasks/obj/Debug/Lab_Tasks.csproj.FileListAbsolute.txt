@@ -1,0 +1,15 @@
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\bin\Debug\Lab_Tasks.exe.config
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\bin\Debug\Lab_Tasks.exe
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\bin\Debug\Lab_Tasks.pdb
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.csproj.AssemblyReference.cache
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.Form1.resources
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.Properties.Resources.resources
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.csproj.GenerateResource.cache
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.csproj.CoreCompileInputs.cache
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.exe
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.pdb
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.Add_student_form.resources
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.list_student.resources
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.search_student.resources
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.delete_student.resources
+P:\Programming\Data Base\Lab Tasks\Lab1\Lab_Tasks\Lab_Tasks\obj\Debug\Lab_Tasks.Form2.resources

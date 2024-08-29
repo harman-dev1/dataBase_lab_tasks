@@ -1,0 +1,75 @@
+Q1
+SELECT * FROM Orders WHERE ShippedDate > RequiredDate;
+***
+
+
+Q2
+SELECT COUNT(DISTINCT Country) as No_of_Countries FROM Employees;
+***
+
+
+Q3
+SELECT   CASE     WHEN ReportsTo IS NULL THEN 'YES'     ELSE 'NO'   END AS Result FROM Employees WHERE ReportsTo IS NULL;
+
+***
+
+
+Q4
+SELECT ProductName FROM Products WHERE Discontinued = 1;
+***
+
+
+Q5
+SELECT OrderID FROM [Order Details] WHERE Discount = 0;
+***
+
+
+Q6
+SELECT ContactName FROM Customers WHERE Region is NULL;
+***
+
+
+Q7
+SELECT ContactName,Phone FROM Customers WHERE Country = 'USA' OR Country = 'UK';
+***
+
+
+Q8
+SELECT CompanyName FROM Suppliers WHERE HomePage IS Not NULL;
+***
+
+
+Q9
+SELECT ShipCountry FROM Orders WHERE ShippedDate IS NOT NULL AND YEAR(ShippedDate) = 1997 ;
+***
+
+
+Q10
+SELECT CustomerID FROM Orders WHERE ShippedDate IS NULL;
+***
+
+
+Q11
+SELECT SupplierID,CompanyName,City FROM Suppliers;
+***
+
+
+Q12
+***
+SELECT  COUNT(DISTINCT Country) as Distinct_Countries FROM Employees
+
+SELECT * FROM Employees  WHERE City = 'London';
+
+Q13
+SELECT ProductName FROM Products WHERE Discontinued = 0;
+***
+
+
+Q14
+SELECT OrderID FROM [Order Details] WHERE Discount <= 0.1;
+***
+
+
+Q15
+SELECT EmployeeID,FirstName,LastName,HomePhone,Extension FROM Employees WHERE Region IS NULL;
+***

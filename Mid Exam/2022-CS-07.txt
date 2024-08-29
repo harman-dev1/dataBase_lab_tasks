@@ -1,0 +1,53 @@
+Q1
+SELECT DISTINCT ASP.Email AS EmailId,C.CourseTitle AS CourseName FROM SpikoStudent s INNER JOIN SpikoStudentSection ssSS ON s.StudentId = ssSS.StudentId INNER JOIN SpikoSection sec ON ssSS.SectionId = sec.Id INNER JOIN SpikoCourse C ON sec.CourseId = C.CourseId INNER JOIN AspNetUsers ASP ON s.UserId = ASP.Id WHERE s.StudentId NOT IN (SELECT DISTINCT S.StudentId FROM SpikoStudent S JOIN SpikoAssignmentSubmission SAS ON S.StudentId=SAS.StudentId JOIN SpikoAssignment SA ON SA.Id=SAS.AssignmentId JOIN SpikoSection SS ON SS.Id=SA.SectionId JOIN SpikoStudentSection SSS ON SSS.SectionId=SS.Id AND s.StudentId=SSS.StudentId)
+***
+
+
+Q2
+USE [LmsTestDb] SELECT DISTINCT Concat(SC.Session,' ',SC.Year) AS [Semester Name] FROM SpikoCourse SC ORDER BY [Semester Name]
+***
+
+
+Q3
+USE [LmsTestDb] SELECT SC.CourseTitle [COURSE NAME] FROM SpikoCourse SC JOIN (SELECT DISTINCT CourseId FROM SpikoSection SS LEFT JOIN SpikoStudentSection SSS ON SSS.SectionId=SS.Id WHERE SSS.SectionId IS NULL) S ON S.CourseId=SC.CourseId
+***
+
+
+Q4
+USE [LmsTestDb] SELECT S.FullName,SUM(SSE.ObtainedMarks) as TotalMarks FROM SpikoStudent S INNER JOIN SpikoStudentEvaluation SSE ON SSE.StudentId=S.StudentId INNER JOIN SpikoEvaluation SE ON SE.Id=SSE.EvaluationId WHERE SE.CourseId=1015 GROUP BY SE.CourseId,S.FullName
+***
+
+
+Q5
+use [LmsTestDb] SELECT C.CourseTitle FROM SpikoCourse C JOIN (SELECT S.CourseId FROM SpikoAnnouncement S Group By S.CourseId Having COUNT(S.CourseID)>5) AS ANNOUNCEMENT ON C.CourseId=ANNOUNCEMENT.CourseId
+***
+
+
+Q6
+USE [LmsTestDb] SELECT S.FULLNAME AS [Student Name] FROM SpikoStudent S join(SELECT SAS.StudentId FROM SpikoAssignmentSubmission SAS JOIN SpikoAssignment SA ON SA.Id = SAS.AssignmentId WHERE DATEDIFF(HOUR, SA.DeadLine, SAS.SubmittedOn) <= 1 GROUP BY SAS.StudentId HAVING COUNT(SA.ID) > 2) AS ST ON ST.StudentId=S.StudentId
+***
+
+
+Q7
+USE [LmsTestDb] SELECT DISTINCT SC.CourseTitle FROM SpikoCourse SC Join (SELECT SS.CourseId FROM SpikoSection SS JOIN SpikoStudentSection SSS ON SS.Id=SSS.SectionId GROUP BY SSS.SectionId,SS.CourseId HAVING COUNT(SSS.EnrollmentId)>50) AS ST ON ST.CourseId=SC.CourseId
+***
+
+
+Q8
+USE [LmsTestDb] SELECT SAS.AssignmentId FROM SpikoAssignment SA Join SpikoAssignmentSubmission SAS On SA.Id=SAS.AssignmentId WHERE SAS.SubmittedOn<SA.DeadLine Group By SAS.AssignmentId HAVING COUNT(SAS.StudentId)<3
+***
+
+
+Q9
+USE [LmsTestDb] SELECT DISTINCT SC.CourseTitle AS COURSENAME FROM SpikoAssignment SA Join SpikoSection SS On SA.SectionId=SS.Id JOIN SpikoCourse SC ON SC.CourseId=SS.CourseId WHERE SA.DeadLine>GETDATE()
+***
+
+
+Q10
+USE [LmsTestDb] SELECT DISTINCT S.RegistrationNumber AS RegistrationNumber1,S2.RegistrationNumber AS RegistrationNumber2 FROM SpikoStudentSection SS1 JOIN SpikoStudentSection SS2 ON SS1.SectionId = SS2.SectionId AND SS1.StudentId < SS2.StudentId JOIN SpikoStudent S ON S.StudentId = SS1.StudentId JOIN SpikoStudent S2 ON S2.StudentId = SS2.StudentId GROUP BY S.RegistrationNumber, S2.RegistrationNumber HAVING COUNT(DISTINCT SS1.EnrollmentId) > 3 AND COUNT(DISTINCT SS2.EnrollmentId) > 3
+***
+
+
+Q11
+USE [LmsTestDb] SELECT S.RegistrationNumber AS [RegistrationNumber1],S2.RegistrationNumber AS RegistrationNumber2 FROM SpikoAssignmentSubmission SAS JOIN SpikoAssignmentSubmission SAS1 ON SAS.AssignmentId=SAS1.AssignmentId AND SAS.StudentId<SAS1.StudentId JOIN SpikoStudent S ON S.StudentId=SAS.StudentId JOIN SpikoStudent S2 ON S2.StudentId=SAS1.StudentId WHERE DATEDIFF(MINUTE,SAS.SubmittedOn,SAS1.SubmittedOn)<10 GROUP BY S.RegistrationNumber,S2.RegistrationNumber HAVING COUNT(SAS.AssignmentId)>2 AND COUNT(SAS1.AssignmentId)>2
+***
